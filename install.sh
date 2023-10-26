@@ -71,9 +71,9 @@ install_software() {
 wayland_session() {
     WLDIR=/usr/share/wayland-sessions
     if [ -d "$WLDIR" ]; then
-        echo -e "$COK - $WLDIR found"
+        echo -e "$WLDIR found"
     else
-        echo -e "$CWR - $WLDIR NOT found, creating..."
+        echo -e "$WLDIR NOT found, creating..."
         sudo mkdir $WLDIR
     fi 
     # stage the .desktop file
