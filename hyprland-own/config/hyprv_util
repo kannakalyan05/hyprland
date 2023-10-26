@@ -1,0 +1,10 @@
+#!/bin/bash
+
+restart_waybar() {
+  #restart the waybar
+  pkill waybar
+  waybar &
+}
+
+swww img ~/.config/backgrounds/'background.jpg'
+restart_waybar

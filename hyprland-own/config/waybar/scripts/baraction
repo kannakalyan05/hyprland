@@ -1,0 +1,52 @@
+#!/bin/sh
+
+SET_BG=""
+# Check which waybar theme is set
+THEMEIS=$(readlink -f ~/.config/waybar/style.css | cut -d '-' -f2)
+
+#if the theme is not dark then we need to switch to it
+if [[ $THEMEIS != "dark.css" ]]; then
+    SWITCHTO="-dark"
+    MODESTR="Dark"
+else
+    MODESTR="Light"
+fi
+
+#show a message
+notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "switching to $MODESTR"
+
+#set the waybar theme
+ln -sf ~/.config/waybar/style/style$SWITCHTO.css ~/.config/waybar/style.css
+
+#set the rofi theme
+ln -sf ~/.config/rofi/conf/style$SWITCHTO.rasi ~/.config/rofi/config.rasi
+
+#set the mako theme
+ln -sf ~/.config/mako/conf/config$SWITCHTO ~/.config/mako/config
+
+#set the xfce and GTK theme
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
+gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
+xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
+
+
+#change the background image and be cool about it ;)
+if [ -z $SET_BG ]; then
+    swww img ~/.config/backgrounds/background$SWITCHTO.jpg --transition-fps 60 --transition-type random --transition-duration 3
+else
+    swww img $SET_BG --transition-fps 60 --transition-type wipe --transition-duration 2
+fi
+
+#update the sddm image
+cp -f ~/.config/backgrounds/background$SWITCHTO.jpg /usr/share/sddm/themes/sdt/wallpaper.jpg
+
+#reset mako
+sleep 1
+pkill mako
+mako &
+
+#restart the waybar
+#killall -SIGUSR2 waybar <-- start causing web brwsers to close so switched to below...
+pkill waybar
+waybar &

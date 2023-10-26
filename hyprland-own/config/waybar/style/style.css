@@ -1,0 +1,218 @@
+* {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#custom-lock_screen,
+#custom-power_btn,
+#pulseaudio {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#custom-launch_wofi,
+#taskbar,
+#window,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#tray,
+#custom-weather,
+#backlight,
+#pulseaudio,
+#pulseaudio.microphone,
+#battery,
+#custom-lock_screen,
+#custom-power_btn,
+#clock,
+#custom-light_dark {
+    background: rgba(251, 241, 199, 0.3);
+    padding: 0px 10px;
+    border: 2px solid rgba(251, 241, 199, 0.4);
+}
+
+#custom-launch_wofi,
+#custom-lock_screen,
+#cpu,
+#backlight,
+#battery {
+  border-radius: 10px 0px 0px 10px;
+  margin-left: 10px;
+}
+
+#taskbar,
+#custom-power_btn,
+#temperature,
+#pulseaudio.microphone,
+#custom-light_dark {
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+}
+
+#tray,
+#workspaces,
+#window,
+#network,
+#custom-weather {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+#clock,
+#memory,
+#disk,
+#pulseaudio {
+  border-left: transparent;
+  border-right: transparent;
+}
+
+#custom-launch_wofi,
+#custom-lock_screen,
+#cpu,
+#backlight,
+#battery {
+  border-right: transparent;
+}
+
+#taskbar,
+#custom-power_btn,
+#temperature,
+#pulseaudio.microphone,
+#custom-light_dark {
+  border-left: transparent;
+}
+
+#workspaces {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(213, 196, 161, 0.5);
+    padding: 0px 1px;
+    border-radius: 15px;
+    border:0px;
+    font-weight: bold;
+    font-style: normal;
+    opacity:0.8;
+    font-size:16px;
+}
+
+#workspaces button {
+    padding: 1px 9px;
+    margin: 3px 3px;
+    border-radius: 15px;
+    border:0px;
+    color: #FFFFFF;
+    background-color: rgba(251, 73, 52, 0.5);
+    transition: all 0.3s ease-in-out;
+    opacity:0.4;
+}
+
+#workspaces button.active {
+    color: #FFFFFF;
+    background: rgba(142, 192, 124, 0.5);
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity:1.0;
+}
+
+#workspaces button:hover {
+    color: #FFFFFF;
+    background: rgba(254, 128, 25, 0.5);
+    border-radius: 15px;
+    opacity:0.7;
+}
+
+#custom-launch_wofi {
+  color: #076678;
+}
+
+#network {
+  color: rgba(136, 255, 51, 0.7);
+}
+
+#temperature.critical {
+    color: #e92d4d;
+}
+
+#clock {
+  color: #8ec;
+}
+
+#custom-lock_screen {
+  color: #458588;
+}
+
+#cpu {
+  color: #d65d0e;
+}
+
+#memory {
+  color: #3c3836;
+}
+
+#disk {
+  color: #8f3;
+}
+
+#custom-weather {
+  color: #fb4934;
+}
+
+#pulseaudio {
+    color: #89b4fa;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#temperature.critical {
+    color: #e92d4d;
+}
+
+#temperature{
+    color: #a6e3a1;
+}
+
+#custom-power_btn {
+  color: red;
+}
+
+#window {
+  color: #ebdbb2;
+}
+
+#custom-light_dark {
+  color: #3c3836;
+}
+
+#backlight {
+  color: white;
+}
+
+#taskbar button.active {
+  background: rgba(215, 153, 33, 0.5);
+  border-radius: 20px;
+}
+
+#taskbar button:hover {
+    background: rgba(215, 153, 33, 0.5);
+    border-radius: 20px;
+}
+
+tooltip {
+    border-radius: 10px;
+    background-color: rgba(60, 56, 54, 0.5);
+    padding:20px;
+    margin:0px;
+}
