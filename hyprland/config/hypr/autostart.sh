@@ -2,10 +2,10 @@
 
 update_theme() {
     #set the xfce and GTK theme
-    xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
-    gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
-    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
-    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
+    xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita-dark"
+    gsettings set org.gnome.desktop.interface icon-theme "Adwaita-dark"
+    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
+    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 }
 
 restart_waybar() {
