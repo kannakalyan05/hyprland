@@ -16,13 +16,10 @@ prep_stage=(
     pipewire 
     wireplumber 
     jq 
-    wl-clipboard 
-    python-requests 
 )
 
 #the main packages
 install_stage=(
-    hyprland
     kitty 
     mako 
     waybar
@@ -40,8 +37,6 @@ install_stage=(
     thunar 
     btop
     mpv
-    pamixer 
-    pavucontrol 
     brightnessctl 
     bluez 
     bluez-utils
@@ -58,6 +53,17 @@ gtk_apps=(
     lxappearance 
     xfce4-settings
     nwg-look-bin
+    pamixer
+    pavucontrol 
+)
+
+#software for nvidia GPU only
+nvidia_stage=(
+    linux-headers 
+    nvidia-dkms 
+    nvidia-settings 
+    libva 
+    libva-nvidia-driver-git
 )
 
 # function that will test for a package and if not found it will attempt to install it
@@ -72,6 +78,13 @@ install_software() {
   fi
 }
 
+# find the Nvidia GPU
+if lspci -k | grep -A 2 -E "(VGA|3D)" | grep -iq nvidia; then
+    ISNVIDIA=true
+else
+    ISNVIDIA=false
+fi
+
 # clear the screen
 clear
 
@@ -85,6 +98,30 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
         install_software $SOFTWR 
     done
 
+    # Setup Nvidia if it was found
+    if [[ "$ISNVIDIA" == true ]]; then
+        echo -e "Nvidia GPU support setup stage, this may take a while..."
+        for SOFTWR in ${nvidia_stage[@]}; do
+            install_software $SOFTWR
+        done
+    
+        # update config
+        sudo sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf
+        sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img
+        echo -e "options nvidia-drm modeset=1" | sudo tee -a /etc/modprobe.d/nvidia.conf
+    fi
+
+    # Install the correct hyprland version
+    echo -e " Installing Hyprland, this may take a while..."
+    if [[ "$ISNVIDIA" == true ]]; then
+        #check for hyprland and remove it so the -nvidia package can be installed
+        if yay -Q hyprland &>> /dev/null ; then
+            yay -R --noconfirm hyprland
+        fi
+        install_software hyprland-nvidia
+    else
+        install_software hyprland
+    fi
 
     # Stage 1 - main components
     echo -e "Installing main components, this may take a while..."
@@ -97,6 +134,8 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     for SOFTWR in ${gtk_apps[@]}; do
         install_software $SOFTWR 
     done
+
+
 
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service..."
