@@ -15,7 +15,6 @@ prep_stage=(
     polkit-gnome 
     pipewire 
     wireplumber 
-    jq 
 )
 
 #the main packages
@@ -37,10 +36,7 @@ install_stage=(
     thunar 
     btop
     mpv
-    brightnessctl 
-    bluez 
-    bluez-utils
-    blueman 
+    brightnessctl  
     network-manager-applet 
     thunar-archive-plugin 
     file-roller
@@ -49,6 +45,9 @@ install_stage=(
 )
 
 gtk_apps=(
+    bluez 
+    bluez-utils
+    blueman
     gvfs 
     lxappearance 
     xfce4-settings
@@ -134,8 +133,6 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     for SOFTWR in ${gtk_apps[@]}; do
         install_software $SOFTWR 
     done
-
-
 
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service..."
