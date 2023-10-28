@@ -1,0 +1,164 @@
+* {
+  font-family: "Comic Sans MS";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#custom-launch_wofi,
+#workspaces,
+#taskbar,
+#window,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#tray,
+#backlight,
+#pulseaudio,
+#pulseaudio.microphone,
+#battery,
+#custom-power_btn,
+#clock {
+  color: white;
+  padding: 0px 5px;
+  background: rgba(22,22,22,0.2);
+  border: 2px solid rgba(157, 0, 6, 0.1);
+}
+
+#window,
+#clock,
+#network {
+  border-radius: 10px;
+}
+
+#custom-launch_wofi,
+#taskbar,
+#cpu,
+#backlight,
+#battery {
+  border-radius: 10px 0px 0px 10px;
+  margin-left: 10px;
+  border-right: transparent;
+}
+
+#workspaces,
+#tray,
+#temperature,
+#pulseaudio.microphone,
+#custom-power_btn {
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+  border-left: transparent;
+}
+
+#memory,
+#disk,
+#pulseaudio {
+  border-left: transparent;
+  border-right: transparent;
+}
+
+#workspaces {
+    padding: 0px 1px;
+    border:0px;
+    font-weight: bold;
+    font-style: normal;
+    opacity:0.8;
+    font-size:16px;
+}
+
+#workspaces button.active {
+  background-color: rgba(22,22,22,0.3);
+  color: skyblue;
+}
+
+#workspaces button:hover {
+    color: #FFFFFF;
+    background: rgba(254, 128, 25, 0.3);
+    opacity:0.3;
+}
+
+#taskbar button.active {
+  background: rgba(3, 172, 19, 0.3);
+  border-radius: 20px;
+}
+
+#taskbar button:hover {
+    background: rgba(3, 172, 19, 0.3);
+    border-radius: 20px;
+}
+
+tooltip {
+    background: #1e1e2e;
+    opacity: 0.8;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+tooltip label{
+    color: #cdd6f4;
+}
+
+/*###############################################################################################*/
+
+#custom-launch_wofi {
+  color: #89b4fa;
+}
+
+#network {
+  color: #d79921;
+}
+
+
+#clock {
+  color: #689d6a;
+}
+
+
+#cpu {
+  color: #d65d0e;
+}
+
+#memory {
+  color: rgba(255, 153, 128, 0.7);
+}
+
+#disk {
+  color: #b8bb26;
+}
+
+
+#pulseaudio {
+    color: #89b4fa;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#temperature.critical {
+    color: #e92d4d;
+}
+
+#temperature{
+    color: #a6e3a1;
+}
+
+#custom-power_btn {
+  color: red;
+}
+
+#window {
+  color: #ebdbb2;
+}
