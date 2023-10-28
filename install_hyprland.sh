@@ -124,7 +124,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 
 # Setup each appliaction
     # check for existing config folders and backup 
-    for DIR in hypr kitty mako swaylock waybar rofi wlogout swappy neofetch
+    for DIR in hypr kitty mako swaylock waybar rofi wlogout swappy neofetch gtk-3.0
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
