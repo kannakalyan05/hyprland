@@ -50,11 +50,9 @@ install_stage=(
 
 gtk_apps=(
     bluez
-    ttf
     bluez-utils
     blueman
     gvfs 
-    nwg-look-bin
     pamixer
     pavucontrol
     adwaita-dark-darose
