@@ -52,11 +52,13 @@ gtk_apps=(
     bluez
     bluez-utils
     blueman
-    gvfs 
+    gvfs
+    xdg-user-dirs
+    nwg-look-bin
     pamixer
     pavucontrol
     adwaita-dark-darose
-    windows10-icon-theme
+    windows10-icon-theme-git
     ttf-comic-mono-git
     ttf-jetbrains-mono
     ttf-comic-sans
