@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the folder containing the pictures
-picture_folder="$HOME/Downloads/backgrounds/"
+picture_folder="$HOME/.config/backgrounds/"
 
 # Set transition options
 transition_fps=60
