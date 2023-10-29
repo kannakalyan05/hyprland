@@ -1,5 +1,20 @@
 #!/bin/bash
-background_dir="~/.config/backgrounds"
-image_location=$(find "$background_dir" -type f | shuf -n 1)
-swww -i "$image_location" --transition-fps 60 --transition-type random --transition-duration 3
+
+# Directory containing image files
+image_dir="$HOME/.config/backgrounds"
+
+# Transition options
+transition_fps=60
+transition_type="random"
+transition_duration=3
+
+# Get a random image from the directory
+random_image=$(find "$image_dir" -type f | shuf -n 1)
+
+if [ -n "$random_image" ]; then
+    echo "Displaying: $random_image"
+    swww img "$random_image" --transition-fps "$transition_fps" --transition-type "$transition_type" --transition-duration "$transition_duration"
+else
+    echo "No image files found in $image_dir."
+fi
 
