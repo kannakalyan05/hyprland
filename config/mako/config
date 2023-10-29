@@ -31,10 +31,10 @@ anchor=center
 
 format=<b>%s</b>\n%b
 
-background-color=#1e1e2e
+background-color=#1e1e2e80
 text-color=#d9e0ee
 border-color=#313244
-progress-color=over #89b4fa
+progress-color=over #89b4fa80
 
 [urgency=low]
 border-color=#313244
