@@ -42,10 +42,12 @@ fi
 
 # Take the screenshot
 shotnow () {
+  sleep 1
     hyprshot -t 1000 -m output -c -o "$dir" -f "$file"
 }
 
 shotwin () {
+  sleep 1
   hyprshot -t 1000 -m window -c -o "$dir" -f "$file"
 }
 
