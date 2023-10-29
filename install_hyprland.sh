@@ -122,7 +122,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 
 # Setup each appliaction
     # check for existing config folders and backup 
-    for DIR in hypr kitty mako swaylock waybar rofi wlogout swappy neofetch gtk-3.0
+    for DIR in hypr kitty mako swaylock waybar qt5ct qt6ct rofi wlogout swappy neofetch gtk-3.0
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
@@ -146,7 +146,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
         echo -e "$WLDIR NOT found, creating..."
         sudo mkdir $WLDIR
     fi 
-
+    echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
     # stage the .desktop file
     sudo cp Extras/hyprland.desktop /usr/share/wayland-sessions/
 fi
