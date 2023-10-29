@@ -61,6 +61,7 @@ gtk_apps=(
     windows10-icon-theme-git
     ttf-comic-mono-git
     ttf-jetbrains-mono
+    noto-fonts-emoji
     ttf-comic-sans
 )
 
