@@ -160,7 +160,8 @@ if [[ $STAR == "Y" || $STAR == "y" ]]; then
     # install the starship shell
     echo -e "Hansen Crusher, Engage!"
     echo -e "Updating .bashrc..."
-    echo -e '\neval "$(starship init bash)"' >> ~/.bashrc
+    echo -e '\neval "$(starship init bash)"\nalias vi="nvim"' >> ~/.bashrc
+
     echo -e "copying starship config file to ~/.config ..."
     cp Extras/starship.toml ~/.config/
 fi
