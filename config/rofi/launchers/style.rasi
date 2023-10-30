@@ -8,7 +8,7 @@
     selected:       rgba(97, 175, 239, 0.6);
     active:         rgba(152, 195, 121, 0.6);
     urgent:         rgba(224, 108, 117, 0.6);
-    font: "Comic Sans MS 10";
+    font: "JetBrains Mono 10";
 }
 
 /*****----- Configuration -----*****/

@@ -9,7 +9,7 @@ on-button-right=dismiss-all
 on-touch=dismiss
 
 # STYLE OPTIONS
-font=Comic Sans MS 12
+font=JetBrains Mono 12
 width=200
 height=50
 margin=10
