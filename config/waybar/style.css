@@ -27,7 +27,7 @@ window#waybar {
 #clock {
   color: white;
   padding: 0px 5px;
-  background: rgba(22,22,22,0.2);
+  background: rgba(22,22,22,0.4);
   border: 2px solid rgba(157, 0, 6, 0.1);
 }
 
