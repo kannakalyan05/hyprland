@@ -3,7 +3,7 @@
 /*****----- Global Properties -----*****/
 * {
     background:     rgba(0, 0, 0, 0.0);
-    background-alt: rgba(40, 43, 49, 0.6);
+    background-alt: rgba(224, 108, 117, 0.1);
     foreground:     #FFFFFFFF;
     selected:       rgba(97, 175, 239, 0.6);
     active:         rgba(152, 195, 121, 0.6);
@@ -32,7 +32,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      2px solid;
-    border-radius:               15px;
+    border-radius:               5px;
     border-color:                @urgent;
     background-color:            @background;
     cursor:                      "default";
@@ -45,7 +45,7 @@ mainbox {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               15px;
+    border-radius:               5px;
     border-color:                @selected;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
@@ -134,9 +134,9 @@ element normal.normal {
     text-color:                  @foreground;
 }
 element selected.normal {
-    border: 2px;
+    border: 1px 1px 2px 1px;
     border-color: @urgent;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     background-color:            @background-alt;
     text-color:                  @foreground;
 }

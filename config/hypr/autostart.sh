@@ -7,7 +7,7 @@ restart_waybar() {
 }
 
 set_current_background() {
-    swww img ~/.config/backgrounds/'background-1.jpg'
+  swww img ~/.config/backgrounds/forest.jpg
 }
 
 set_current_background
