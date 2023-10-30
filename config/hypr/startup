@@ -10,4 +10,5 @@ exec-once = mako
 exec-once = blueman-applet
 exec-once = nm-applet --indicator
 exec-once = ~/.config/hypr/screenlock.sh
+exec-once = wl-paste --watch cliphist store
 exec = ~/.config/hypr/autostart.sh
