@@ -28,7 +28,6 @@
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
-    "custom/wallpaper",
     "battery",
     "custom/power_btn"
   ],
@@ -41,12 +40,6 @@
 
   "hyprland/window": {
       "format": "{}"
-  },
-
-  "custom/wallpaper": {
-    "format": " 󰋩 ",
-    "on-click": "~/.config/waybar/scripts/background.sh",
-    "tooltip": false
   },
 
   "wlr/taskbar": {

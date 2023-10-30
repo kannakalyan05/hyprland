@@ -22,7 +22,6 @@ window#waybar {
 #pulseaudio,
 #pulseaudio.microphone,
 #battery,
-#custom-wallpaper,
 #custom-power_btn,
 #clock {
   color: white;
@@ -162,11 +161,4 @@ tooltip label{
 
 #window {
   color: #ebdbb2;
-}
-
-#custom-wallpaper {
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 10px;
-  color: #31d645
 }
