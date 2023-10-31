@@ -12,3 +12,4 @@ restart_waybar() {
 
 set_current_background
 restart_waybar
+set_current_background
