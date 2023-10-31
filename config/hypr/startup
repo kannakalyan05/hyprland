@@ -11,4 +11,5 @@ exec-once = blueman-applet
 exec-once = nm-applet --indicator
 
 exec = ~/.config/hypr/autostart.sh
+exec = ~/.config/hypr/swayidlde.sh
 exec = waybar
