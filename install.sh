@@ -61,6 +61,7 @@ gtk_apps=(
     windows10-icon-theme-git
     ttf-fira-code
     noto-fonts-emoji
+    eog
 )
 
 
