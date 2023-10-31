@@ -8,7 +8,7 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "JetBrains Mono 10";
+    font:                        "Fira Code 11";
     background:                  #2D1B14;
     background-alt:              #462D23;
     foreground:                  #FFFFFF;

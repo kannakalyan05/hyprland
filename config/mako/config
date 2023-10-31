@@ -9,7 +9,7 @@ on-button-right=dismiss-all
 on-touch=dismiss
 
 # STYLE OPTIONS
-font=JetBrains Mono 11
+font=Fira Code 10
 width=200
 height=50
 margin=10

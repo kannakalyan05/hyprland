@@ -59,7 +59,7 @@ gtk_apps=(
     pavucontrol
     adwaita-dark-darose
     windows10-icon-theme-git
-    ttf-jetbrains-mono
+    ttf-fira-code
     noto-fonts-emoji
 )
 

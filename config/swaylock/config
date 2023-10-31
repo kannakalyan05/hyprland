@@ -5,7 +5,7 @@ image=~/.config/backgrounds/background-1.jpg
 effect-blur=9x5
 effect-vignette=0.5:0.5
 color=1f1d2e80
-font="JetBrains Mono"
+font="Fira Code"
 indicator
 indicator-radius=200
 indicator-thickness=20
