@@ -58,7 +58,7 @@ gtk_apps=(
     pamixer
     pavucontrol
     adwaita-dark-darose
-    windows10-icon-theme-git
+    whitesur-icon-theme
     ttf-fira-code
     noto-fonts-emoji
     eog
