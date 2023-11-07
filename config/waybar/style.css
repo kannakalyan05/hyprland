@@ -76,6 +76,7 @@ window#waybar {
   background-color: rgba(22,22,22,0.3);
   color: skyblue;
   border-bottom: 2px;
+  border-top: 2px;
   border-style: solid;
 }
 
