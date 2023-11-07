@@ -25,7 +25,7 @@ window#waybar {
 #custom-power_btn,
 #clock {
   color: white;
-  padding: 0px 5px;
+  padding: 1px 5px;
   background: rgba(22,22,22,0.4);
   border: 2px solid rgba(157, 0, 6, 0.1);
 }
@@ -75,6 +75,8 @@ window#waybar {
 #workspaces button.active {
   background-color: rgba(22,22,22,0.3);
   color: skyblue;
+  border-bottom: 2px;
+  border-style: solid;
 }
 
 #workspaces button:hover {
