@@ -46,7 +46,6 @@ install_stage=(
     starship 
     sddm
     swww 
-    yad-git
 )
 
 gtk_apps=(
