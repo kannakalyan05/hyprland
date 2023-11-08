@@ -168,7 +168,7 @@
     "clock": {
     "interval": 1,
       "format": "{:󰥔  %I:%M:%S %p}",
-      "tooltip-format": "{:  %A, %e %B %Y}",
+      "tooltip-format": "{:  %A, %d-%m-%Y}",
       "format-alt": "{:󰸗 %e %B %Y}"
     },
 
