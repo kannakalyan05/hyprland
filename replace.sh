@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 cd config  # Change the working directory to "config"
 
 read -rep $'[\e[1;33mACTION\e[0m] - Would you like to replace files? (y,n) ' CFG

@@ -31,46 +31,16 @@ window#waybar {
   border: 2px solid rgba(157, 0, 6, 0.1);
 }
 
-#window,
-#clock,
-#network {
-  border-radius: 10px;
-}
-
-#custom-launch_wofi,
-#taskbar,
-#cpu,
-#backlight,
-#battery {
-  border-radius: 10px 0px 0px 10px;
-  margin-left: 10px;
-  border-right: transparent;
-}
-
-#workspaces,
-#tray,
-#temperature,
-#pulseaudio.microphone,
-#custom-power_btn {
-  border-radius: 0px 10px 10px 0px;
-  margin-right: 10px;
-  border-left: transparent;
-}
-
-#memory,
-#disk,
-#pulseaudio {
-  border-left: transparent;
-  border-right: transparent;
-}
-
 #workspaces {
     padding: 0px 1px;
-    border:0px;
+    border:2px;
     font-weight: bold;
     font-style: normal;
     opacity:0.8;
+    margin-right: 10px;
     font-size:16px;
+    border-radius: 0px 10px 10px 0px;
+
 }
 
 #workspaces button.active {
@@ -113,42 +83,62 @@ tooltip label{
 
 #custom-launch_wofi {
   color: #89b4fa;
+  margin-left: 10px;
+  border-radius: 10px 0px 0px 10px;
+  border-right: transparent;
 }
 
 #network {
   color: #d79921;
+  border-radius: 10px;
+  margin-right: 10px
 }
 
 
 #clock {
   color: #689d6a;
   margin-left: 10px;
+  border-radius: 10px
 }
 
 
 #cpu {
   color: #d65d0e;
+  border-radius: 10px 0px 0px 10px;
+  border-right: transparent;
 }
 
 #memory {
   color: rgba(255, 153, 128, 0.7);
+  border-right: transparent;
+  border-left: transparent;
 }
 
 #disk {
   color: #b8bb26;
+  border-right: transparent;
+  border-left: transparent;
 }
 
 
 #pulseaudio {
     color: #89b4fa;
+    border-right: transparent;
+    border-left: transparent;
 }
 
 #pulseaudio.microphone {
     color: #cba6f7;
+    border-left: transparent;
+    border-right: transparent;
+    margin-right: 10px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 #battery {
     color: #a6e3a1;
+    border-radius: 10px 0px 0px 10px;
+    border-right: transparent;
 }
 
 #temperature.critical {
@@ -157,10 +147,16 @@ tooltip label{
 
 #temperature{
     color: #a6e3a1;
+    border-left: transparent;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
 }
 
 #custom-power_btn {
   color: red;
+  margin-right: 10px;
+  border-left: transparent;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #window {
@@ -169,6 +165,26 @@ tooltip label{
 
 #custom-weather {
   border-radius: 10px;
-  margin-left: 10px;
   color: cyan;
+  margin-right: 10px;
+}
+
+#backlight {
+  border-radius: 10px 0px 0px 10px;
+  border-right: transparent;
+}
+
+#taskbar {
+  border-radius: 10px 0px 0px 10px;
+  border-right: transparent;
+}
+
+#tray {
+  border-left: transparent;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+}
+
+#window {
+  border-radius: 10px;
 }
