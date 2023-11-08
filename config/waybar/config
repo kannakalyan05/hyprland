@@ -180,7 +180,7 @@
     },
 
     "custom/weather": {
-      "exec": "curl 'https://wttr.in/repalle?format=2'",
+      "exec": "curl -s 'https://wttr.in/repalle?format=2' | tr -d ' '",
       "interval": 900
     }
 }
