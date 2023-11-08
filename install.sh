@@ -57,6 +57,7 @@ gtk_apps=(
     nwg-look-bin
     pamixer
     pavucontrol
+    ttf-iosevka-nerd
     adwaita-dark-darose
     whitesur-icon-theme
     ttf-fira-code
