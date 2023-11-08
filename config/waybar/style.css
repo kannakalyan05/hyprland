@@ -4,6 +4,11 @@
   font-size: 12px;
 }
 
+#pulseaudio,
+#custom-power_btn {
+  font-family: "IosevkaNerdFont";
+}
+
 window#waybar {
   background: transparent;
 }
