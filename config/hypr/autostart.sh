@@ -10,6 +10,10 @@ restart_waybar() {
   waybar &
 }
 
-set_current_background
+sway_idle() {
+   swayidle -w timeout 300 'swaylock -f' timeout 360 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+}
+
 restart_waybar
+sway_idle
 set_current_background
