@@ -181,6 +181,7 @@
 
     "custom/weather": {
       "exec": "curl -s 'https://wttr.in/repalle?format=2' | tr -d ' '",
+      "tooltip": false,
       "interval": 900
     }
 }
