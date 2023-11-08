@@ -1,0 +1,31 @@
+window {
+  border-radius: 10px;
+  background: rgba(40, 40, 40, 0.6);
+}
+
+#input {
+}
+#input:focus {
+}
+
+#inner-box {
+}
+
+#outer-box {
+}
+
+#scroll {
+}
+
+#img:selected {
+  border-radius: 10px;
+}
+
+#text:selected {
+}
+
+#entry {
+}
+
+#entry:selected {
+}
