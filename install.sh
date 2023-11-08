@@ -73,7 +73,7 @@ install_software() {
   else
     # no package found so installing
     echo "Now installing $1 ."
-    yay -S $1 
+    yay -S $1 --noconfirm
   fi
 }
 
