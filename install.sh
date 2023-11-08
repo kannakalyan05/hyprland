@@ -26,7 +26,6 @@ install_stage=(
     kitty 
     mako 
     waybar
-    swww 
     swaylock-effects
     swayidle
     rofi
@@ -46,6 +45,8 @@ install_stage=(
     file-roller
     starship 
     sddm
+    swww 
+    yad-git
 )
 
 gtk_apps=(
