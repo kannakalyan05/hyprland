@@ -45,8 +45,7 @@ install_stage=(
     file-roller
     starship 
     sddm
-    swww 
-    yad-git
+    swww
 )
 
 gtk_apps=(
