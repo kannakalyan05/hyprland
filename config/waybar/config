@@ -17,7 +17,8 @@
     "hyprland/window"
   ],
   "modules-center": [
-    "clock"
+    "clock",
+    "idle_inhibitor"
   ],
   "modules-right": [
     "network",
@@ -42,6 +43,15 @@
   "hyprland/window": {
       "format": "{}"
   },
+
+   "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "   on",
+            "deactivated": "  "
+        },
+        "tooltip": true
+    },
 
   "wlr/taskbar": {
       "format": "{icon}",

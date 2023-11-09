@@ -29,6 +29,7 @@ window#waybar {
 #battery,
 #custom-weather,
 #custom-power_btn,
+#idle_inhibitor,
 #clock {
   color: white;
   padding: 1px 5px;
@@ -110,7 +111,8 @@ tooltip label{
 #clock {
   color: #689d6a;
   margin-left: 10px;
-  border-radius: 10px
+  border-radius: 10px 0px 0px 10px;
+  border-right: transparent;
 }
 
 
@@ -199,4 +201,10 @@ tooltip label{
 
 #window {
   border-radius: 10px;
+}
+
+#idle_inhibitor {
+  color: cyan;
+  border-radius: 0px 10px 10px 0px;
+  border-left: transparent;
 }
