@@ -6,7 +6,7 @@
   "passthrough": false,
   "gtk-layer-shell": true,
   "height": 40,
-  "margin-top": 5,
+  "margin-top": 2,
 
 
   "modules-left": [
@@ -175,8 +175,24 @@
      "hyprland/workspaces": {
    	 "active-only": false,
     	"all-outputs": false,
-   	 "format": "{name}",
+   	 "format": "{icon}",
+     "format-icons": {
+       "active": "󰀉",
+       "default": "󰥱",
+     },
     	"show-special": true
+    },
+
+    "custom/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+          "active": "󰀉",
+          "default": "",
+          "urgent": "󰀨",
+          },
+    "persistent-workspaces": {
+        "*": 4
+          }
     },
 
     "custom/weather": {
