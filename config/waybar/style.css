@@ -51,7 +51,8 @@ window#waybar {
 #workspaces button.active {
   background-color: rgba(22,22,22,0.3);
   color: skyblue;
-  border-bottom: 2px;
+  border: 2px solid rgba(157, 0, 6, 0.5);
+  border-radius: 10px;
   border-style: solid;
 }
 
