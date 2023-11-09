@@ -96,7 +96,7 @@ tooltip label{
 
 #custom-launch_wofi {
   color: #89b4fa;
-  margin-left: 10px;
+  margin-left: 5px;
   border-radius: 10px 0px 0px 10px;
   border-right: transparent;
 }
@@ -168,7 +168,7 @@ tooltip label{
 
 #custom-power_btn {
   color: red;
-  margin-right: 10px;
+  margin-right: 5px;
   border-left: transparent;
   border-radius: 0px 10px 10px 0px;
 }
