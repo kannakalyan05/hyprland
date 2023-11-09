@@ -51,13 +51,13 @@ window#waybar {
 
 #workspaces button {
   background-color: rgba(22,22,22,0.3);
-  color: pink;
+  color: yellow;
 
 }
 
 #workspaces button.active {
   background-color: rgba(22,22,22,0.3);
-  color: skyblue;
+  color: pink;
   border: 2px solid rgba(157, 0, 6, 0.5);
   border-radius: 20px;
   border-style: solid;
