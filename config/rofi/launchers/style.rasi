@@ -83,7 +83,7 @@ entry {
     text-color:                  inherit;
     cursor:                      text;
     placeholder:                 "Search...";
-    placeholder-color:           inherit;
+    placeholder-color:           #2fe2fe;
 }
 
 /*****----- Listview -----*****/
