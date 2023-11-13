@@ -7,6 +7,6 @@ percentage=$(upower -i /org/freedesktop/UPower/devices/battery_BAT1 | awk '/perc
 if [ "$percentage" -lt 30 ]; then
   notify-send -h string:x-canonical-private-synchronous:sys-notify -u critical "Battery Level Critical" 
 else
-  notify-send -h string:x-canonical-private-synchronous:sys-notify -u critical "Battery Level Normal"
+  notify-send -h string:x-canonical-private-synchronous:sys-notify -u normal "Battery Level Normal"
 fi
 
