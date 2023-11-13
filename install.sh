@@ -149,7 +149,6 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
         echo -e "$WLDIR NOT found, creating..."
         sudo mkdir $WLDIR
     fi 
-    echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
     # stage the .desktop file
     sudo cp Extras/hyprland.desktop /usr/share/wayland-sessions/
 fi
@@ -164,6 +163,7 @@ if [[ $STAR == "Y" || $STAR == "y" ]]; then
     source ~/.bashrc
     echo -e "copying starship config file to ~/.config ..."
     cp Extras/starship.toml ~/.config/
+    echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 fi
 
 clear
