@@ -42,10 +42,12 @@ default-timeout=1000
 
 [urgency=normal]
 border-color=#14c704
+background-color=#39bd1980
 default-timeout=1000
 
 [urgency=high]
 border-color=#f38ba8
+background-color=#bd311980
 text-color=#d9e0ee
 default-timeout=1000
 
