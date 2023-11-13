@@ -38,17 +38,16 @@ progress-color=over #89b4fa80
 
 [urgency=low]
 border-color=#313244
-default-timeout=1000
+default-timeout=2000
 
 [urgency=normal]
-border-color=#0da805
-default-timeout=2000
+border-color=#313244
+default-timeout=5000
 
 [urgency=high]
-background-color=#f38ba880
 border-color=#f38ba8
-text-color=#d9e0ee
-default-timeout=2000
+text-color=#f38ba8
+default-timeout=0
 
 [category=mpd]
 border-color=#f9e2af

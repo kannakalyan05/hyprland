@@ -107,7 +107,7 @@
     "interface": "wlp4s0",
     "interval": 1,
     "format": "  {bandwidthDownBytes}    {bandwidthUpBytes}",
-    "format-disconnected": " 󰞃 No Network",
+    "format-disconnected": " 󰞃 ",
     "tooltip": false
   },
 
