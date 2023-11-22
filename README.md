@@ -2,5 +2,5 @@
 
 # preview
 
-![Hyprland Preview](preview/preview.png)
+![Hyprland Preview](https://raw.githubusercontent.com/kannakalyan05/hyprland/main/preview/preview.png)
 
