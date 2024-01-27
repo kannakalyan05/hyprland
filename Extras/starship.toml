@@ -29,11 +29,6 @@ truncation_symbol = "…/"
 "Pictures" = " "
 "Desktop" = " "
 "~"=" "
-"CPP"=" "
-"Cpp"=" "
-"C++"=" "
-"c++"=" "
-"cpp"=" "
 
 [git_branch]
 symbol = ""
