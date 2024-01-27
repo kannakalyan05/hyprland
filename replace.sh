@@ -9,7 +9,7 @@ read -rep $'[\e[1;33mACTION\e[0m] - Would you like to replace files? (y,n) ' CFG
 if [[ $CFG == "Y" || $CFG == "y" ]]; then
   echo -e "Replacing config files..."
   # Check for existing config folders and remove them
-  for DIR in hypr wofi backgrounds eww ncmpcpp rofi gtk-3.0 kitty mako qt5ct qt6ct neofetch nwg-look swaylock waybar wlogout
+  for DIR in hypr wofi backgrounds eww mpd ncmpcpp rofi gtk-3.0 kitty mako qt5ct qt6ct neofetch nwg-look swaylock waybar wlogout
   do
     CWD=$(pwd)
     PWDFILE=$CWD/$DIR
