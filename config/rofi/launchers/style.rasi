@@ -3,7 +3,7 @@
 /*****----- Global Properties -----*****/
 * {
     background:     rgba(20, 20, 20, 0.8);
-    background-alt: rgba(224, 108, 117, 0.5);
+    background-alt: rgba(251, 73, 52, 0.5);
     foreground:     rgba(225, 225, 225, 1);
     font:           "FiraCode 11";
 }

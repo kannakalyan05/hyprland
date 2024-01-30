@@ -10,7 +10,7 @@ configuration {
 * {
     font:                        "Fira Code 11";
     background:                  rgba(20, 20, 20, 0.8);
-    background-alt:              rgba(224, 108, 117, 0.5);
+    background-alt:              rgba(251, 73, 52, 0.5);
     foreground:                  rgba(225, 225, 225, 1);
 }
 
@@ -95,6 +95,7 @@ element normal.normal {
 
 element selected.normal {
     border:                      0px;
+    border-radius:               5px;
     background-color:            @background-alt;
     text-color:                  @foreground;
 }
@@ -104,5 +105,5 @@ element-text {
     text-color:                  @foreground;
     cursor:                      inherit;
     vertical-align:              0.5;
-    horizontal-align:            0.5;
+    horizontal-align:            0.1;
 }
