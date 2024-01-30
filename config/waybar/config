@@ -34,6 +34,7 @@
     "custom/power_btn"
   ],
 
+
   "custom/launch_wofi": {
     "format": "  ",
     "on-click": "~/.config/rofi/launchers/launcher.sh",
