@@ -87,7 +87,7 @@ listview {
     padding:                     0px;
     border:                      0px;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                transparent;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";

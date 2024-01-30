@@ -4,25 +4,21 @@
 theme="~/.config/rofi/screenshot/style.rasi"
 
 # Theme Elements
-prompt='Screenshot'
-mesg="Location: $HOME/Pictures/Screenshots"
-list_col='5'
-list_row='1'
-win_width='670px'
-option_1="󰍹"
-option_2="󰹑"
-option_3="󰨇"
-option_4="󰎰"
-option_5="󰼓"
+mesg="~/Pictures/Screenshots"
+list_col='1'
+list_row='5'
+win_width='250px'
+option_1="󰍹  Window"
+option_2="󰹑  Crop"
+option_3="󰨇  Active"
+option_4="󰎰  Window 5 sec"
+option_5="󰼓  Active 5 sec"
 # Rofi CMD
 rofi_cmd() {
 	rofi -theme-str "window {width: $win_width;}" \
 		-theme-str "listview {columns: $list_col; lines: $list_row;}" \
-		-theme-str 'textbox-prompt-colon {str: "";}' \
 		-dmenu \
-		-p "$prompt" \
 		-mesg "$mesg" \
-		-markup-rows \
 		-theme ${theme}
 }
 
