@@ -56,6 +56,9 @@ gtk_apps=(
     xdg-user-dirs
     nwg-look-bin
     pamixer
+    mtpfs
+    gvfs-mtp
+    gvfs-gphoto2
     pavucontrol
     ttf-iosevka-nerd
     adwaita-dark-darose
