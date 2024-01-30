@@ -11,7 +11,7 @@ restart_waybar() {
 }
 
 sway_idle() {
-   swayidle -w timeout 15 'swaylock -f' timeout 20 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+   swayidle -w timeout 20 'swaylock -f' timeout 25 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
 
 }
 
