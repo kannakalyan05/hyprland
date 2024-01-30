@@ -73,7 +73,7 @@ entry {
 listview {
     enabled:                     true;
     columns:                     1;
-    lines:                       6;
+    lines:                       7;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -113,7 +113,7 @@ element normal.normal {
 element selected.normal {
     border:                      1px 1px 2px 1px;
     border-color:                @background-alt;
-    border-radius:               0px 0px 10px 10px;
+    border-radius:               0px;
     background-color:            @background-alt;
     text-color:                  @foreground;
 }
