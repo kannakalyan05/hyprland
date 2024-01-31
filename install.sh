@@ -128,7 +128,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
 
 # Setup each appliaction
     # check for existing config folders and backup 
-    for DIR in backgrounds hypr kitty mako cava swaylock mpd mpv ncmpcpp nwg-look waybar qt5ct qt6ct rofi wlogout neofetch gtk-3.0
+    for DIR in backgrounds hypr kitty mako btop cava swaylock mpd mpv ncmpcpp nwg-look waybar qt5ct qt6ct rofi wlogout neofetch gtk-3.0
     do 
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then 
