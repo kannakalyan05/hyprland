@@ -104,6 +104,6 @@ element-text {
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.1;
+    vertical-align:              1;
+    horizontal-align:            0;
 }
