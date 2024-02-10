@@ -8,10 +8,10 @@ mesg="~/Pictures/Screenshots"
 list_col='1'
 list_row='5'
 win_width='250px'
-option_1="󰍹  Window capture"
-option_2="󰹑  Crop window"
-option_3="󰨇  Active window"
-option_4="󰎰  Window 5 sec"
+option_1="󰍹  Monitor"
+option_2="󰨇  Active window"
+option_3="󰹑  Crop "
+option_4="󰎰  Monitor 5 sec"
 option_5="󰼓  Active 5 sec"
 # Rofi CMD
 rofi_cmd() {
@@ -55,12 +55,12 @@ shotarea () {
   slurp | grim -t jpeg -g - "$dir/$file" && notify_user
 }
 
-shot5 () {
+shotnow5 () {
   sleep 5
   grim -t jpeg "$dir/$file" && notify_user
 }
 
-shot10 () {
+shotwin5 () {
   sleep 5
   hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | grim -t jpeg -g - "$dir/$file" && notify_user
 }
@@ -70,13 +70,13 @@ run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		shotnow
 	elif [[ "$1" == '--opt2' ]]; then
-		shotarea
-	elif [[ "$1" == '--opt3' ]]; then
 		shotwin
+	elif [[ "$1" == '--opt3' ]]; then
+		shotarea
 	elif [[ "$1" == '--opt4' ]]; then
-		shot5
+		shotnow5
 	elif [[ "$1" == '--opt5' ]]; then
-		shot10
+		shotwin5
 	fi
 }
 
