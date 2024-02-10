@@ -36,7 +36,10 @@ install_stage=(
     xclip
     slurp
     unzip
-    thunar 
+    thunar
+    cava
+    ncmpcpp
+    mpd
     btop
     mpv
     brightnessctl  
