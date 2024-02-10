@@ -8,9 +8,9 @@ mesg="~/Pictures/Screenshots"
 list_col='1'
 list_row='5'
 win_width='250px'
-option_1="󰍹  Window"
-option_2="󰹑  Crop"
-option_3="󰨇  Active"
+option_1="󰍹  Window capture"
+option_2="󰹑  Crop window"
+option_3="󰨇  Active window"
 option_4="󰎰  Window 5 sec"
 option_5="󰼓  Active 5 sec"
 # Rofi CMD
