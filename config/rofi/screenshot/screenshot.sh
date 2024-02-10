@@ -22,6 +22,11 @@ rofi_cmd() {
 		-theme ${theme}
 }
 
+# Notify
+notify_user() {
+	notify-send -h string:x-canonical-private-synchronous:sys-notify -u normal "Screenshot saved"
+}
+
 # Pass variables to rofi dmenu
 run_rofi() {
 	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5" | rofi_cmd
@@ -29,7 +34,7 @@ run_rofi() {
 
 time=$(date +%Y-%m-%d-%H-%M-%S)
 dir="$HOME/Pictures/Screenshots"
-file="Screenshot_${time}.png"
+file="Screenshot_${time}.jpeg"
 
 if [[ ! -d "$dir" ]]; then
     mkdir -p "$dir"
@@ -38,26 +43,26 @@ fi
 # Take the screenshot
 shotnow () {
   sleep 1
-    hyprshot -t 1000 -m output -c -o "$dir" -f "$file"
+  grim -t jpeg "$dir/$file" && notify_user
 }
 
 shotwin () {
   sleep 1
-  hyprshot -t 1000 -m window -c -o "$dir" -f "$file"
+  hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | grim -t jpeg -g - "$dir/$file" && notify_user
 }
 
 shotarea () {
-  hyprshot -t 1000 -m region -o "$dir" -f "$file"
+  slurp | grim -t jpeg -g - "$dir/$file" && notify_user
 }
 
 shot5 () {
   sleep 5
-  hyprshot -t 1000 -m output -c -o "$dir" -f "$file"
+  grim -t jpeg "$dir/$file" && notify_user
 }
 
 shot10 () {
   sleep 5
-  hyprshot -t 1000 -m window -c -o "$dir" -f "$file"
+  hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | grim -t jpeg -g - "$dir/$file" && notify_user
 }
 
 # Execute Command

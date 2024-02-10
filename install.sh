@@ -29,7 +29,6 @@ install_stage=(
     swaylock-effects
     swayidle
     rofi
-    hyprshot
     wlogout 
     xdg-desktop-portal-hyprland 
     grim
