@@ -117,6 +117,11 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     echo -e "Enabling the SDDM Service..."
     sudo systemctl enable sddm
     sleep 2
+
+    # Enable the mpd music player service
+    echo -e "Enabling mpd service..."
+    sudo systemctl enable mpd
+    sleep 2
     
     # Clean out other portals
     echo -e "Cleaning out conflicting xdg portals..."
