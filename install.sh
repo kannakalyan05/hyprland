@@ -24,7 +24,8 @@ prep_stage=(
 install_stage=(
     hyprland
     kitty 
-    mako 
+    mako
+    zathura-pdf-mupdf
     waybar
     swaylock-effects
     swayidle
