@@ -40,6 +40,8 @@ install_stage=(
     cava
     ncmpcpp
     mpd
+    tree
+    htop
     btop
     mpv
     brightnessctl  
